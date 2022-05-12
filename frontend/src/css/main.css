@@ -1,0 +1,75 @@
+
+h1   {color: black;}
+
+table {
+	border-style: solid;
+	border-width: 1pt;
+	border-color: black;
+	font-family: Arial;
+	font-size: 9pt;
+  	width: 90%;
+	
+}
+
+table input{
+	border-style: none;
+}
+
+table th.id{
+	background-color: #575757;
+	color: white;
+	font-weight: bold;
+}
+
+
+td {
+	border-style: solid;
+	border-color: grey;
+	border-width: 1pt;
+}
+
+td.subtableContainer{
+	border-style: none;
+}
+
+
+
+th {
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+table.info {
+	border-style: solid;
+	border-width: 1pt;
+	border-color: grey;
+	font-family: Arial;
+	font-size: 9pt;
+  	width: 60%;	
+}
+
+table.info th {
+	background-color: #575757;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+table.info td {
+	border-style: none;
+}
+
+
+table.subtable{	
+	width: 100%;
+	border-style: none;
+}
+
+table.subtable td{	
+	border-style: solid;
+	border-color: silver;
+	border-width: 1px;
+}
+
