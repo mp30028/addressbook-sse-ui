@@ -1,7 +1,5 @@
 
-h1   {color: black;}
-
-table {
+table.zsft-table {
 	border-style: solid;
 	border-width: 1pt;
 	border-color: black;
@@ -11,37 +9,32 @@ table {
 	
 }
 
-table input{
+table.zsft-table input{
 	border-style: none;
 }
 
-table th.id{
+table.zsft-table th.id{
 	background-color: #575757;
 	color: white;
 	font-weight: bold;
 }
 
 
-td {
+table.zsft-table td {
 	border-style: solid;
 	border-color: grey;
 	border-width: 1pt;
 }
 
-td.subtableContainer{
-	border-style: none;
-}
 
-
-
-th {
+table.zsft-table th {
 	background-color: blue;
 	color: white;
 	font-weight: bold;
 	text-align: center;
 }
 
-table.info {
+table.zsft-table table.info {
 	border-style: solid;
 	border-width: 1pt;
 	border-color: grey;
@@ -50,26 +43,33 @@ table.info {
   	width: 60%;	
 }
 
-table.info th {
+table.zsft-table table.info th {
 	background-color: #575757;
 	color: white;
 	font-weight: bold;
 	text-align: center;
 }
 
-table.info td {
+table.zsft-table table.info td {
 	border-style: none;
 }
 
+table.zsft-table td.subtableContainer{
+	border-style: solid;
+	border-color: grey;
+	border-width: 1pt;
+}
 
-table.subtable{	
+table.zsft-table td.subtableContainer table{	
 	width: 100%;
 	border-style: none;
 }
 
-table.subtable td{	
-	border-style: solid;
-	border-color: silver;
-	border-width: 1px;
+table.zsft-table td.subtableContainer tr{	
+/* 	width: 100%; */
+	border-style: none;
 }
 
+table.zsft-table td.subtableContainer table td{	
+	border-style: none;
+}
