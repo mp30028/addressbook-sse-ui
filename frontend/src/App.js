@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './css/Zonesoft.css';
 
 const API_BASE_URL = 	"/api/persons/get-all";
 
@@ -42,13 +43,14 @@ class App extends Component {
     return (
       <div>
 		<div>
-			<table>
+			<table className="zsft-table">
 				<thead>
 					<tr>
 						<th>ID</th>
 						<th>Firstname</th>
 						<th>Lastname</th>
 						<th>Date of Birth</th>
+						<th>Other Names</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -60,7 +62,19 @@ class App extends Component {
 									<td>{person.id}</td>
 									<td>{person.firstname}</td>
 									<td>{person.lastname}</td>
-									<td>{person.dateOfBirth}</td>
+									<td>{person.dateOfBirth[2]}-{person.dateOfBirth[1]}-{person.dateOfBirth[0]}</td>
+									<td className="subtableContainer">
+										<table>
+											<tbody>
+												{person.otherNames.map(otherName =>
+													<tr key={otherName.id}>
+														<td style={{width: "50%"}}>{otherName.value}</td>
+														<td style={{width: "50%"}}>{otherName.otherNameType.value}</td>
+													</tr>
+												)}
+											</tbody>
+										</table>
+									</td>
 								</tr>
 						)
 					}
